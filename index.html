@@ -88,6 +88,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 /* ── HISTOIRE COMPLÈTE ── */
 .histoire{background:var(--cream);padding:7rem 5vw;display:grid;grid-template-columns:1fr 1.4fr;gap:7rem;align-items:start}
 .histoire-sticky{position:sticky;top:100px}
+.histoire-img{width:100%;aspect-ratio:3/4;background:var(--nude-deep) center/cover no-repeat;border-radius:2px;margin-top:2rem}
 .histoire-body p{font-size:0.93rem;line-height:1.9;color:var(--mid);margin-bottom:1.4rem;font-weight:300}
 .histoire-body p strong{color:var(--dark);font-weight:500}
 .histoire-body p em{font-style:italic;color:var(--terra)}
@@ -226,7 +227,7 @@ footer{background:var(--dark);padding:5rem 5vw 2.5rem}
 .footer-links{list-style:none;display:flex;flex-direction:column;gap:0.7rem}
 .footer-links a{font-size:0.85rem;color:rgba(245,237,228,0.45);text-decoration:none;font-weight:300;transition:color 0.25s}
 .footer-links a:hover{color:var(--nude)}
-.footer-bottom{border-top:1px solid rgba(255,255,255,0.06);padding-top:2rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:gap}
+.footer-bottom{border-top:1px solid rgba(255,255,255,0.06);padding-top:2rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
 .footer-copy{font-size:0.68rem;color:rgba(245,237,228,0.2);font-weight:300}
 .footer-legal{display:flex;gap:2rem}
 .footer-legal a{font-size:0.68rem;color:rgba(245,237,228,0.2);text-decoration:none;transition:color 0.25s}
@@ -307,9 +308,7 @@ footer{background:var(--dark);padding:5rem 5vw 2.5rem}
     </div>
   </div>
   <div class="hero-right">
-    <div class="hero-right-img" style="background-color:#C4A898">
-      <!-- URL photo femmes plage : style="background-image:url('DSC00382-3.jpg')" -->
-    </div>
+    <div class="hero-right-img" style="background-image:url('hero.jpg');background-color:#C4A898"></div>
   </div>
 </section>
 
@@ -336,9 +335,7 @@ footer{background:var(--dark);padding:5rem 5vw 2.5rem}
 <!-- INTRO MELISSA -->
 <section class="intro" id="apropos">
   <div class="intro-img-wrap fade-up">
-    <div class="intro-img" style="background-color:#C9A898">
-      <!-- Photo portrait Melissa : style="background-image:url('melissa_portrait.jpg')" -->
-    </div>
+    <div class="intro-img" style="background-image:url('melissa_portrait.jpg');background-color:#C9A898"></div>
     <div class="intro-img-badge">
       <span class="intro-img-badge-num">💛</span>
       <span class="intro-img-badge-label">Coach certifiée</span>
@@ -361,7 +358,8 @@ footer{background:var(--dark);padding:5rem 5vw 2.5rem}
   <div class="histoire-sticky fade-up">
     <span class="section-kicker">Mon histoire</span>
     <h2 class="section-h">Née pour briller,<br><em>malgré tout.</em></h2>
-    <a href="https://carillo-melissa.systeme.io/15180762" target="_blank" class="btn-main" style="margin-top:2rem">Réserver une séance</a>
+    <div class="histoire-img" style="background-image:url('melissa_histoire.jpg');background-color:#C9A898"></div>
+    <a href="https://carillo-melissa.systeme.io/15180762" target="_blank" class="btn-main" style="margin-top:2rem;display:inline-block">Réserver une séance</a>
   </div>
   <div class="histoire-body fade-up">
     <p>Pendant des années, j'ai lutté contre mon corps sans comprendre pourquoi il réagissait différemment de celui des autres. J'ai essayé tout ce qu'on m'a conseillé. Rien ne fonctionnait. Parce que <strong>personne ne m'avait dit la vérité.</strong></p>
@@ -415,25 +413,25 @@ footer{background:var(--dark);padding:5rem 5vw 2.5rem}
     <p class="communaute-desc">Des femmes de tous horizons, toutes unies par la même envie : avancer, se transformer, et briller — à leur façon, à leur rythme. Sans jugement. Jamais.</p>
   </div>
   <div class="communaute-grid fade-up">
-    <div class="communaute-card" style="background:#B89880">
+    <div class="communaute-card" style="background-image:url('amalia.jpg');background-color:#B89880">
       <div class="communaute-card-info">
         <p class="communaute-card-name">Amalia</p>
         <p class="communaute-card-role">Coaching Sportif · Yoga-Pilates</p>
       </div>
     </div>
-    <div class="communaute-card" style="background:#A07868">
+    <div class="communaute-card" style="background-image:url('manola.jpg');background-color:#A07868">
       <div class="communaute-card-info">
         <p class="communaute-card-name">Manola</p>
         <p class="communaute-card-role">Maquilleuse pro</p>
       </div>
     </div>
-    <div class="communaute-card" style="background:#906858">
+    <div class="communaute-card" style="background-image:url('melanie.jpg');background-color:#906858">
       <div class="communaute-card-info">
         <p class="communaute-card-name">Mélanie</p>
         <p class="communaute-card-role">Entrepreneuse · Leader MLM</p>
       </div>
     </div>
-    <div class="communaute-card" style="background:#805848">
+    <div class="communaute-card" style="background-image:url('elisa.jpg');background-color:#805848">
       <div class="communaute-card-info">
         <p class="communaute-card-name">Elisa</p>
         <p class="communaute-card-role">Entrepreneuse Nutritionniste</p>
@@ -669,9 +667,7 @@ footer{background:var(--dark);padding:5rem 5vw 2.5rem}
 
 <!-- CTA GRANDE -->
 <section class="cta-grande">
-  <div class="cta-grande-bg" style="background-color:#1A110D">
-    <!-- URL photo : style="background-image:url('DSC00382-3.jpg')" -->
-  </div>
+  <div class="cta-grande-bg" style="background-image:url('cta_bg.jpg');background-color:#1A110D"></div>
   <div class="cta-grande-content fade-up">
     <span class="cta-grande-kicker">Prête à commencer ?</span>
     <h2 class="cta-grande-title">Rejoins la tribu<br><em>Born to Shine.</em></h2>
@@ -770,13 +766,10 @@ footer{background:var(--dark);padding:5rem 5vw 2.5rem}
 </footer>
 
 <script>
-// Nav shadow on scroll
 window.addEventListener('scroll', () => {
-  document.getElementById('nav').style.boxShadow = 
+  document.getElementById('nav').style.boxShadow =
     window.scrollY > 20 ? '0 2px 24px rgba(26,17,13,0.06)' : 'none';
 });
-
-// Fade-up animation on scroll
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(e => {
     if (e.isIntersecting) {
