@@ -3,7 +3,31 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Born to Shine — Melissa Carillo</title>
+<title>Born to Shine — Melissa Carillo | Coach Sport & Mindset à Marseille</title>
+<meta name="description" content="Coaching sport, nutrition et mindset pour femmes, adapté au lipœdème. Rejoins Born to Shine, la communauté de Melissa Carillo. Séance découverte gratuite de 30 min.">
+<link rel="canonical" href="https://borntoshineofficial.com/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://borntoshineofficial.com/">
+<meta property="og:title" content="Born to Shine — Melissa Carillo | Coach Sport & Mindset">
+<meta property="og:description" content="Coaching sport, nutrition et mindset pour femmes, adapté au lipœdème. Séance découverte gratuite de 30 min.">
+<meta property="og:image" content="https://borntoshineofficial.com/hero.jpg">
+<meta property="og:locale" content="fr_FR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#A85540">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌸</text></svg>">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Born to Shine — Melissa Carillo",
+  "description": "Coaching sport, nutrition et mindset pour femmes, adapté au lipœdème.",
+  "url": "https://borntoshineofficial.com",
+  "image": "https://borntoshineofficial.com/melissa_portrait.jpg",
+  "founder": {"@type": "Person", "name": "Melissa Carillo", "sameAs": "https://instagram.com/melissacarillo"},
+  "address": {"@type": "PostalAddress", "addressLocality": "Marseille", "addressCountry": "FR"},
+  "priceRange": "€€"
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
@@ -168,6 +192,28 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 .coaching-cta-title{font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:300;color:var(--dark);margin-bottom:0.5rem}
 .coaching-cta-sub{font-size:0.85rem;color:var(--mid);margin-bottom:1.5rem;font-weight:300}
 
+
+/* ── EBOOK ── */
+.ebook{padding:7rem 5vw;background:var(--nude);display:grid;grid-template-columns:1fr 1.2fr;gap:6rem;align-items:center}
+.ebook-cover-wrap{display:flex;justify-content:center;perspective:1200px}
+.ebook-cover{width:min(300px,70vw);aspect-ratio:0.7;background:linear-gradient(150deg,var(--terra) 0%,#8A4432 65%,#6E3627 100%);border-radius:4px 10px 10px 4px;box-shadow:-18px 24px 50px rgba(26,17,13,0.28),inset 4px 0 8px rgba(255,255,255,0.12);position:relative;display:flex;flex-direction:column;justify-content:space-between;padding:2.2rem 1.8rem;transform:rotateY(-12deg);transition:transform .5s}
+.ebook-cover:hover{transform:rotateY(-4deg)}
+.ebook-cover::before{content:'';position:absolute;left:10px;top:0;bottom:0;width:1px;background:rgba(255,255,255,0.25)}
+.ebook-cover-kicker{font-size:0.55rem;letter-spacing:0.35em;text-transform:uppercase;color:rgba(245,237,228,0.6);font-weight:400}
+.ebook-cover-title{font-family:'Cormorant Garamond',serif;font-size:1.7rem;font-weight:400;color:var(--nude);line-height:1.2}
+.ebook-cover-title em{font-style:italic}
+.ebook-cover-author{font-size:0.62rem;letter-spacing:0.2em;text-transform:uppercase;color:rgba(245,237,228,0.75);font-weight:400}
+.ebook-badge{display:inline-flex;align-items:center;gap:0.5rem;background:var(--white);padding:0.4rem 1rem;border-radius:100px;margin-bottom:1.5rem;width:fit-content}
+.ebook-badge span{font-size:0.62rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--terra);font-weight:500}
+.ebook-list{list-style:none;margin:1.5rem 0 2rem;display:flex;flex-direction:column;gap:0.7rem}
+.ebook-list li{font-size:0.88rem;color:var(--mid);line-height:1.7;padding-left:1.6rem;position:relative;font-weight:300}
+.ebook-list li::before{content:'✓';position:absolute;left:0;color:var(--terra);font-weight:500}
+.ebook-buy{display:flex;align-items:center;gap:1.5rem;flex-wrap:wrap}
+.ebook-price{font-family:'Cormorant Garamond',serif;font-size:2.2rem;font-weight:300;color:var(--dark)}
+.ebook-price small{font-size:0.7rem;font-family:'DM Sans',sans-serif;color:var(--soft);display:block;letter-spacing:0.1em;text-transform:uppercase;font-weight:300}
+.ebook-note{font-size:0.72rem;color:var(--soft);margin-top:1.2rem;font-weight:300}
+@media(max-width:960px){.ebook{grid-template-columns:1fr;gap:3.5rem}}
+
 /* ── PROCESSUS ── */
 .processus{padding:7rem 5vw;background:var(--white)}
 .processus-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:4rem;position:relative}
@@ -273,6 +319,7 @@ footer{background:var(--dark);padding:5rem 5vw 2.5rem}
     <li><a href="#accueil">Accueil</a></li>
     <li><a href="#apropos">À propos</a></li>
     <li><a href="#coaching">Coaching</a></li>
+    <li><a href="#ebook">E-book</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="https://calendly.com/borntoshinelife/seance-decouverte-30-min" target="_blank" class="nav-btn">Commencer</a></li>
   </ul>
@@ -491,7 +538,7 @@ footer{background:var(--dark);padding:5rem 5vw 2.5rem}
   </div>
   <div class="temoignages-grid fade-up">
     <div class="temoignage temoignage-featured">
-      <div class="temoignage-stars">⭐⭐⭐⭐⭐</div>
+      <div class="temoignage-stars"><span class="temoignage-star">★</span><span class="temoignage-star">★</span><span class="temoignage-star">★</span><span class="temoignage-star">★</span><span class="temoignage-star">★</span></div>
       <p class="temoignage-text">"Melissa m'a redonné confiance en moi. En 3 mois j'ai changé mon rapport à mon corps et à ma tête. Born to Shine c'est bien plus qu'un programme — c'est une vraie famille, un endroit où je me sens enfin comprise."</p>
       <div class="temoignage-author">
         <div class="temoignage-avatar"></div>
@@ -593,6 +640,35 @@ footer{background:var(--dark);padding:5rem 5vw 2.5rem}
     <h3 class="coaching-cta-title">Tu ne sais pas par où commencer ?</h3>
     <p class="coaching-cta-sub">Commence par une séance découverte GRATUITE de 30 min. Aucun engagement — juste une conversation pour se rencontrer.</p>
     <a href="https://calendly.com/borntoshinelife/seance-decouverte-30-min" target="_blank" class="btn-main">Réserver ma séance découverte gratuite</a>
+  </div>
+</section>
+
+
+<!-- EBOOK -->
+<section class="ebook" id="ebook">
+  <div class="ebook-cover-wrap fade-up">
+    <div class="ebook-cover">
+      <span class="ebook-cover-kicker">E-book · Guide pratique</span>
+      <h3 class="ebook-cover-title">Le Guide Complet<br><em>du Lipœdème</em></h3>
+      <span class="ebook-cover-author">Melissa Carillo · Born to Shine</span>
+    </div>
+  </div>
+  <div class="fade-up">
+    <div class="ebook-badge"><span>Nouveau · Téléchargement immédiat</span></div>
+    <span class="section-kicker">L'e-book</span>
+    <h2 class="section-h">Le guide que j'aurais aimé<br><em>avoir plus tôt.</em></h2>
+    <p class="section-p">Tout ce que Melissa a appris sur le lipœdème — des années de recherches, d'essais et de vécu — condensé dans un guide clair, bienveillant et actionnable. Écrit par une femme qui vit avec, pour les femmes qui vivent avec.</p>
+    <ul class="ebook-list">
+      <li>Comprendre le lipœdème : symptômes, stades, diagnostic</li>
+      <li>Sport et alimentation réellement adaptés à ton corps</li>
+      <li>Conseils concrets pour le quotidien et le mental</li>
+      <li>Guide PDF à lire sur téléphone, tablette ou ordinateur</li>
+    </ul>
+    <div class="ebook-buy">
+      <div class="ebook-price">24,90 €<small>Paiement sécurisé</small></div>
+      <a href="https://payhip.com/b/VOTRE-LIEN" target="_blank" class="btn-main">Acheter l'e-book</a>
+    </div>
+    <p class="ebook-note">Livraison instantanée par e-mail après paiement · Paiement CB sécurisé</p>
   </div>
 </section>
 
@@ -701,6 +777,9 @@ footer{background:var(--dark);padding:5rem 5vw 2.5rem}
   </div>
   <form class="fade-up" action="https://api.web3forms.com/submit" method="POST">
       <input type="hidden" name="access_key" value="06019c87-c91a-47ea-9853-ea8ea5b9b32d">
+      <input type="hidden" name="subject" value="Nouveau message depuis borntoshineofficial.com">
+      <input type="hidden" name="redirect" value="https://borntoshineofficial.com/merci.html">
+      <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
     <div class="form-group">
       <label>Prénom</label>
       <input type="text" name="prénom" placeholder="Ton prénom">
@@ -726,8 +805,6 @@ footer{background:var(--dark);padding:5rem 5vw 2.5rem}
       <div class="footer-social">
         <a href="https://instagram.com/melissacarillo" title="Instagram">ig</a>
         <a href="https://instagram.com/borntoshine.life" title="Born to Shine">🌟</a>
-        <a href="#" title="TikTok">tt</a>
-        <a href="#" title="Podcast">🎙</a>
       </div>
     </div>
     <div>
@@ -736,6 +813,7 @@ footer{background:var(--dark);padding:5rem 5vw 2.5rem}
         <li><a href="#accueil">Accueil</a></li>
         <li><a href="#apropos">À propos</a></li>
         <li><a href="#coaching">Coaching</a></li>
+        <li><a href="#ebook">E-book</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
@@ -744,16 +822,14 @@ footer{background:var(--dark);padding:5rem 5vw 2.5rem}
       <ul class="footer-links">
         <li><a href="https://instagram.com/melissacarillo">@melissacarillo</a></li>
         <li><a href="https://instagram.com/borntoshine.life">@borntoshine.life</a></li>
-        <li><a href="#">TikTok</a></li>
-        <li><a href="#">Podcast</a></li>
       </ul>
     </div>
     <div>
       <span class="footer-col-title">Légal</span>
       <ul class="footer-links">
-        <li><a href="#">Mentions légales</a></li>
+        <li><a href="mentions-legales.html">Mentions légales</a></li>
         <li><a href="#">CGV</a></li>
-        <li><a href="#">Confidentialité</a></li>
+        <li><a href="mentions-legales.html#confidentialite">Confidentialité</a></li>
       </ul>
     </div>
   </div>
