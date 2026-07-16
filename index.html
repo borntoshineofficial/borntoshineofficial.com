@@ -196,13 +196,8 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 /* ── EBOOK ── */
 .ebook{padding:7rem 5vw;background:var(--nude);display:grid;grid-template-columns:1fr 1.2fr;gap:6rem;align-items:center}
 .ebook-cover-wrap{display:flex;justify-content:center;perspective:1200px}
-.ebook-cover{width:min(300px,70vw);aspect-ratio:0.7;background:linear-gradient(150deg,var(--terra) 0%,#8A4432 65%,#6E3627 100%);border-radius:4px 10px 10px 4px;box-shadow:-18px 24px 50px rgba(26,17,13,0.28),inset 4px 0 8px rgba(255,255,255,0.12);position:relative;display:flex;flex-direction:column;justify-content:space-between;padding:2.2rem 1.8rem;transform:rotateY(-12deg);transition:transform .5s}
-.ebook-cover:hover{transform:rotateY(-4deg)}
-.ebook-cover::before{content:'';position:absolute;left:10px;top:0;bottom:0;width:1px;background:rgba(255,255,255,0.25)}
-.ebook-cover-kicker{font-size:0.55rem;letter-spacing:0.35em;text-transform:uppercase;color:rgba(245,237,228,0.6);font-weight:400}
-.ebook-cover-title{font-family:'Cormorant Garamond',serif;font-size:1.7rem;font-weight:400;color:var(--nude);line-height:1.2}
-.ebook-cover-title em{font-style:italic}
-.ebook-cover-author{font-size:0.62rem;letter-spacing:0.2em;text-transform:uppercase;color:rgba(245,237,228,0.75);font-weight:400}
+.ebook-cover-img{width:min(300px,70vw);aspect-ratio:0.7;object-fit:cover;border-radius:4px 10px 10px 4px;box-shadow:-18px 24px 50px rgba(26,17,13,0.28);transform:rotateY(-12deg);transition:transform .5s;display:block}
+.ebook-cover-img:hover{transform:rotateY(-4deg)}
 .ebook-badge{display:inline-flex;align-items:center;gap:0.5rem;background:var(--white);padding:0.4rem 1rem;border-radius:100px;margin-bottom:1.5rem;width:fit-content}
 .ebook-badge span{font-size:0.62rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--terra);font-weight:500}
 .ebook-list{list-style:none;margin:1.5rem 0 2rem;display:flex;flex-direction:column;gap:0.7rem}
@@ -647,17 +642,13 @@ footer{background:var(--dark);padding:5rem 5vw 2.5rem}
 <!-- EBOOK -->
 <section class="ebook" id="ebook">
   <div class="ebook-cover-wrap fade-up">
-    <div class="ebook-cover">
-      <span class="ebook-cover-kicker">E-book · Guide pratique</span>
-      <h3 class="ebook-cover-title">Le Guide Complet<br><em>du Lipœdème</em></h3>
-      <span class="ebook-cover-author">Melissa Carillo · Born to Shine</span>
-    </div>
+    <img src="ebook_cover.jpg" alt="Ce que j'aurai aimé savoir sur le lipœdème — Melissa Carillo" class="ebook-cover-img">
   </div>
   <div class="fade-up">
     <div class="ebook-badge"><span>Nouveau · Téléchargement immédiat</span></div>
     <span class="section-kicker">L'e-book</span>
-    <h2 class="section-h">Le guide que j'aurais aimé<br><em>avoir plus tôt.</em></h2>
-    <p class="section-p">Tout ce que Melissa a appris sur le lipœdème — des années de recherches, d'essais et de vécu — condensé dans un guide clair, bienveillant et actionnable. Écrit par une femme qui vit avec, pour les femmes qui vivent avec.</p>
+    <h2 class="section-h">Ce que j'aurais aimé savoir<br><em>sur le lipœdème.</em></h2>
+    <p class="section-p">Arrêter de faire la guerre à son corps. Réapprendre à vivre avec lui. Tout ce que Melissa a appris sur le lipœdème — des années de recherches, d'essais et de vécu — condensé dans un guide clair, bienveillant et actionnable.</p>
     <ul class="ebook-list">
       <li>Comprendre le lipœdème : symptômes, stades, diagnostic</li>
       <li>Sport et alimentation réellement adaptés à ton corps</li>
